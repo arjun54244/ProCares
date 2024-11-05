@@ -15,7 +15,7 @@ Blogs
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Blog Grid</li>
+                        <li class="breadcrumb-item" aria-current="page">Blog</li>
                     </ol>
                 </nav>
             </div>
@@ -31,238 +31,24 @@ Blogs
         <div class="row">
             <div class="col-lg-8 col-md-12">
 
+                @foreach ($blogs as $blog )
                 <div class="row blog-grid-row">
                     <div class="col-md-6 col-sm-12">
-
                         <!-- Blog Post -->
                         <div class="blog grid-blog">
                             <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-01.jpg" alt="Post Image"></a>
+                                <a href="blog-details.html"><img class="img-fluid" src="{{ asset('storage/'.$blog->image) }}" alt="Post Image"></a>
                             </div>
                             <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-01.jpg" alt="Post Author"> <span>Dr. Ruby Perrin</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 4 Dec 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Doccure – Making your clinic painless visit?</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
+        
+                                <h3 class="blog-title"><a href="{{ route('blogs.show', $blog->id) }}">{{ $blog->title }}</a></h3>
+                                <p class="mb-0">{{ $blog->short_description }}</p>
                             </div>
                         </div>
                         <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-02.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-02.jpg" alt="Post Author"> <span>Dr. Darren Elder</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 3 Dec 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">What are the benefits of Online Doctor Booking?</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-03.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-03.jpg" alt="Post Author"> <span>Dr. Deborah Angel</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 3 Dec 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Benefits of consulting with an Online Doctor</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-04.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-04.jpg" alt="Post Author"> <span>Dr. Sofia Brient</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 2 Dec 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">5 Great reasons to use an Online Doctor</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-05.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-05.jpg" alt="Post Author"> <span>Dr. Marvin Campbell</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 1 Dec 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Online Doctor Appointment Scheduling</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-06.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-06.jpg" alt="Post Author"> <span>Dr. Katharine Berthold</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 30 Nov 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Simple steps to make your doctor visits exceptional!</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-07.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-07.jpg" alt="Post Author"> <span>Dr. Linda Tobin</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 28 Nov 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Choose your own Online Doctor Appointment</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-08.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-08.jpg" alt="Post Author"> <span>Dr. Paul Richard </span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 25 Nov 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Simple steps to visit your doctor today</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-09.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-09.jpg" alt="Post Author"> <span>Dr. John Gibbs</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 24 Nov 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">5 Great reasons to use an Online Doctor</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-
-                        <!-- Blog Post -->
-                        <div class="blog grid-blog">
-                            <div class="blog-image">
-                                <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-10.jpg" alt="Post Image"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="doctor-profile.html"><img src="assets/img/doctors/doctor-thumb-10.jpg" alt="Post Author"> <span>Dr. Olga Barlow</span></a>
-                                        </div>
-                                    </li>
-                                    <li><i class="far fa-clock"></i> 23 Nov 2023</li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Online Doctoral Programs</a></h3>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                        <!-- /Blog Post -->
-
                     </div>
                 </div>
+                @endforeach
 
                 <!-- Blog Pagination -->
                 <div class="row">

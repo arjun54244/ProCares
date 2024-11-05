@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    protected $guarded = [];
+    protected $guarded = ['blog'];
+    
     protected $casts = [
         'tags' => 'array'
     ];
