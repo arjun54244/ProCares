@@ -9,11 +9,14 @@ Route::get('/', function () {
 })->name('home');
 Route::view('/about','about')->name('about');
 Route::view('/contact','contact')->name('contact');
-// Route::view('/blogs','blog')->name('blogs');
+Route::view('/services','services')->name('services');
+Route::view('/search','search')->name('search');
+// Route::view('/blog','blog');
 // Display all blog posts
-Route::resource('/blogs', BlogController::class)->only(['index', 'show']);
+Route::view('/post', 'blog');
+Route::resource('/blogs', BlogController::class);
 
-Route::post('/blogs/{blog}/comments', [CommentController::class, 'store'])->name('comments.store');
+// Route::post('/blogs/{blog}/comments', [CommentController::class, 'store'])->name('comments.store');
 
 Route::fallback(function () {
     return view('404');

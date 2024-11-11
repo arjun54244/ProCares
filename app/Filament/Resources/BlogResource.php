@@ -33,6 +33,7 @@ class BlogResource extends Resource
                 Textarea::make('short_description'),
                 FileUpload::make('image')
                     ->directory('blog')
+                    ->disk('public')
                     ->storeFileNamesIn('blog'),
                 TextInput::make('image_alt_tag'),
                 RichEditor::make('description')

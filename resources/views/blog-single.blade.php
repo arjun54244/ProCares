@@ -210,7 +210,7 @@ About Us
 						</div>
 					
 						<!-- Blog Sidebar -->
-						<div class="col-lg-4 col-md-12 sidebar-right theiaStickySidebar">
+						<div class="col-lg-4 col-md-12 sidebar-right">
 
 							<!-- Search -->
 							<div class="card search-widget">
