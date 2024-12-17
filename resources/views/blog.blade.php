@@ -31,24 +31,24 @@ Blogs
         <div class="row">
             <div class="col-lg-8 col-md-12">
 
-                @foreach ($blogs as $blog )
                 <div class="row blog-grid-row">
+                    @foreach ($blogs as $blog )
                     <div class="col-md-6 col-sm-12">
                         <!-- Blog Post -->
                         <div class="blog grid-blog">
                             <div class="blog-image">
-                                <a href="{{ route('blogs.show', $blog->id) }}"><img class="img-fluid" src="{{   asset('storage/'.$blog->image) }}" alt="Post Image"></a>
+                                <a href="{{ route('blogs.show', $blog->slug ) }}"><img class="img-fluid" src="{{   asset('storage/'.$blog->image) }}" alt="Post Image"></a>
                             </div>
                             <div class="blog-content">
 
-                                <h3 class="blog-title"><a href="{{ route('blogs.show', $blog->id) }}">{{ $blog->title }}</a></h3>
+                                <h3 class="blog-title"><a href="{{ route('blogs.show', $blog->slug ) }}">{{ $blog->title }}</a></h3>
                                 <p class="mb-0">{{ $blog->short_description }}</p>
                             </div>
                         </div>
                         <!-- /Blog Post -->
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
 
                 <!-- Blog Pagination -->
                 <!-- <div class="row">
@@ -161,7 +161,7 @@ Blogs
                                 </div>
                                 <div class="post-info">
                                     <h4>
-                                        <a href="{{ route('blogs.show', $blog->id) }}">{{ $blog->title }}</a>
+                                        <a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->title }}</a>
                                     </h4>
                                     <p>{{ $blog->created_at->format('j M Y') }}</p>
                                 </div>

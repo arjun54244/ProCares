@@ -6,10 +6,10 @@
 				<div class="col-lg-3 col-md-4">
 					<div class="footer-widget footer-about">
 						<div class="footer-logo">
-							<a href="index.html"><img src="{{asset('assets/img/logo-01.svg')}}" alt="logo"></a>
+							<a href="index.html"><img src="{{asset('assets/img/imglogo.png')}}" alt="Procare Clinic Logo"></a>
 						</div>
 						<div class="footer-about-content">
-							<p>Effortlessly schedule your medical appointments with Doccure. Connect with healthcare professionals, manage appointments & prioritize your well being </p>
+							<p>Procare Clinic is dedicated to providing exceptional healthcare services in a compassionate and patient-centered environment. Your well-being is our top priority.</p>
 						</div>
 					</div>
 				</div>
@@ -17,21 +17,22 @@
 					<div class="row">
 						<div class="col-lg-3 col-md-4">
 							<div class="footer-widget footer-menu">
-								<h2 class="footer-title">Company</h2>
+								<h2 class="footer-title">Quick Links</h2>
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="search.html">Specialities</a></li>
-									<li><a href="video-call.html">Video Consult</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-4">
 							<div class="footer-widget footer-menu">
-								<h2 class="footer-title">Specialities</h2>
+								<h2 class="footer-title">Specialties</h2>
 								<ul>
-									<li><a href="search.html">Neurology</a></li>
-									<li><a href="search.html">Cardiologist</a></li>
-									<li><a href="search.html">Dentist</a></li>
+									<li><a href="gastroenterology.html">Gastroenterology</a></li>
+									<li><a href="hepatology.html">Hepatology</a></li>
+									<li><a href="diagnostics.html">Diagnostics</a></li>
 								</ul>
 							</div>
 						</div>
@@ -40,13 +41,13 @@
 								<h2 class="footer-title">Contact Us</h2>
 								<div class="footer-contact-info">
 									<div class="footer-address">
-										<p><i class="feather-map-pin"></i> 3556 Beech Street, USA</p>
+										<p><i class="feather-map-pin"></i> E 66, Main, Press Enclave Marg, near Max Hospital, Saket, South Delhi, Delhi 110017</p>
 									</div>
 									<div class="footer-address">
-										<p><i class="feather-phone-call"></i> +1 315 369 5943</p>
+										<p><i class="feather-phone-call"></i> +91 9315845539</p>
 									</div>
 									<div class="footer-address mb-0">
-										<p><i class="feather-mail"></i> <a href="https://doccure.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e5a515d5d4b4c5b7e5b465f534e525b105d5153">[email&#160;protected]</a></p>
+										<p><i class="feather-mail"></i> <a href="mailto:info@procareclinic.com">info@procareclinic.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -55,26 +56,17 @@
 				</div>
 				<div class="col-lg-3 col-md-7">
 					<div class="footer-widget">
-						<h2 class="footer-title">Join Our Newsletter</h2>
-						<div class="subscribe-form">
-							<form action="#">
-								<input type="email" class="form-control" placeholder="Enter Email">
-								<button type="submit" class="btn">Submit</button>
-							</form>
-						</div>
+						<h2 class="footer-title">Follow Us</h2>
 						<div class="social-icon">
 							<ul>
 								<li>
-									<a href="javascript:void(0);"><i class="fab fa-facebook"></i></a>
+									<a href="https://www.facebook.com/drpeeyushkumargastro/" target="_blank"><i class="fab fa-facebook"></i></a>
 								</li>
 								<li>
-									<a href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+									<a href="https://www.instagram.com/drpeeyushkumargastro/" target="_blank"><i class="fab fa-instagram"></i></a>
 								</li>
 								<li>
-									<a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+									<a href="https://www.linkedin.com/company/dr-piyush-kumar-gastro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -90,11 +82,10 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-6">
 						<div class="copyright-text">
-							<p class="mb-0">Copyright © 2024 Doccure. All Rights Reserved</p>
+							<p class="mb-0">Copyright © 2024 Procare Clinic. All Rights Reserved</p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-6">
-
 						<!-- Copyright Menu -->
 						<div class="copyright-menu">
 							<ul class="policy-menu">
@@ -103,7 +94,6 @@
 							</ul>
 						</div>
 						<!-- /Copyright Menu -->
-
 					</div>
 				</div>
 			</div>
@@ -111,6 +101,7 @@
 		</div>
 	</div>
 </footer>
+
 <!-- /Footer -->
 
 <!-- Cursor -->

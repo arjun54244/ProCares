@@ -7313,14 +7313,14 @@ html.menu-opened body {
 }
 
 .carousel-item {
-  height: 75vh;
+  /* height: 75vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -1 !important;
+  z-index: -1 !important; */
 }
 
 .divider .carousel-caption {

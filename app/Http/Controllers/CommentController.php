@@ -10,18 +10,20 @@ class CommentController extends Controller
     public function store(Request $request, Blog $blog)
     {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'comment' => 'required',
+            'blog_id' => 'required',
+            'author' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'content' => 'required|string',
         ]);
-
-        // Create the comment for the specified blog post
+        
         $blog->comments()->create([
-            '' => $request->name,
+            'blog_id' => '1',
+            'author' => $request->author,
             'email' => $request->email,
-            'comment_text' => $request->comment,
+            'content' => $request->content,
         ]);
-        return dd($blog);
-        // return redirect()->route('blogs.show', $blog)->with('success', 'Comment added successfully');
+        return 'CommentController store is working ' ;
+
+        // return redirect()->route('blogs.show', $blog)->with('success', 'Comment added successfully!');
     }
 }

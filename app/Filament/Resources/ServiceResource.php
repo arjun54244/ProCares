@@ -31,17 +31,16 @@ class ServiceResource extends Resource
         ->schema([
             Select::make('department')
                 ->options([
-                    'Gynae' => 'Gynae',
-                    'GeneralSurgery' => 'General Surgery',
-                    'LaserLaprascopicSurgeon' => 'Laser, laprascopic surgeon',
-                    'Endocrinologist' => 'Endocrinologist',
-                    'Anaesthesiology ' => 'Anaesthesiology ',
+                    'endocrinology' => 'Endocrinology',
+                    'gastroenterology' => 'Gastroenterology',
                 ])
                 ->required(),
             TextInput::make('title'),
-            TextInput::make('short_description'),
+            TextInput::make('short_description')
+            ->maxLength(255),
             FileUpload::make('icon')
-                ->directory('service')->storeFileNamesIn('service'),
+                ->directory('service/icon')
+                ->storeFileNamesIn('service'),
             FileUpload::make('image')
                 ->directory('service')->storeFileNamesIn('service'),
             TextInput::make('image_alt_tag'),
@@ -65,7 +64,8 @@ class ServiceResource extends Resource
                 ->columnSpan('full'),
             TextInput::make('slug'),
             TextInput::make('meta_title'),
-            TextInput::make('meta_desc'),
+            TextInput::make('meta_desc')
+                ->maxLength(255),
             TagsInput::make('tags')
             // Toggle::make('status')
             //     ->onColor('success')
@@ -79,7 +79,7 @@ class ServiceResource extends Resource
         ->columns([
             Tables\Columns\TextColumn::make('id'),
             Tables\Columns\TextColumn::make('department'),
-            Tables\Columns\TextColumn::make('title'),
+            Tables\Columns\TextColumn::make('title')->searchable(),
             // Tables\Columns\TextColumn::make('short_description'),
             Tables\Columns\ImageColumn::make('icon')->disk('public'),
             Tables\Columns\ImageColumn::make('image')->disk('public'),
@@ -90,6 +90,7 @@ class ServiceResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

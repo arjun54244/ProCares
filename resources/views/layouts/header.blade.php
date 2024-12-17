@@ -24,7 +24,7 @@
 	<title>@yield('title', 'ProCares')</title>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="{{asset('assets/img/favicon1.png')}}" type="image/x-icon">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
@@ -710,13 +710,13 @@
 							</span>
 						</a>
 						<a href="index.html" class="navbar-brand logo">
-							<img src="{{asset('assets/img/logo-01.svg')}}" class="img-fluid" alt="Logo">
+							<img src="{{asset('assets/img/imglogo.png')}}" class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
 							<a href="index.html" class="menu-logo">
-								<img src="{{asset('assets/img/logo-01.svg')}}" class="img-fluid" alt="Logo">
+								<img src="{{asset('assets/img/imglogo.png')}}" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>
@@ -730,51 +730,28 @@
 								<a href="{{route('about')}}">About Us</a>
 							</li>
 							<li class="has-submenu">
-								<a href="{{route('services')}}">Services<i class="fas fa-chevron-down"></i></a>
+								<a href="{{route('depatments')}}">Services<i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+									@foreach($services = \App\Models\Service::all()->where('status', 1)->unique('department') as $service)
 									<li class="has-submenu">
-										<a href="javascript:void(0);">Doctors</a>
+										<a href="javascript:void(0);">{{ucfirst($service->department)}}</a>
 										<ul class="submenu inner-submenu">
-											<li><a href="map-grid.html">Map Grid</a></li>
-											<li><a href="map-list.html">Map List</a></li>
+											@foreach($services = \App\Models\Service::all()->where('status', 1)->where('department', $service->department) as $s)
+											<li><a href="{{route('services.show', $s->slug)}}">{{$s->title}}</a></li>
+											@endforeach
 										</ul>
 									</li>
-									<li class="has-submenu">
-										<a href="javascript:void(0);">Search Doctor</a>
-										<ul class="submenu inner-submenu">
-											<li><a href="search.html">Search Doctor 1</a></li>
-											<li><a href="search-2.html">Search Doctor 2</a></li>
-										</ul>
-									</li>
-									<li class="has-submenu">
-										<a href="javascript:void(0);">Doctor Profile</a>
-										<ul class="submenu inner-submenu">
-											<li><a href="doctor-profile.html">Doctor Profile 1</a></li>
-											<li><a href="doctor-profile-2.html">Doctor Profile 2</a></li>
-										</ul>
-									</li>
-									<li class="has-submenu">
-										<a href="javascript:void(0);">Booking</a>
-										<ul class="submenu inner-submenu">
-											<li><a href="booking.html">Booking 1</a></li>
-											<li><a href="booking-2.html">Booking 2</a></li>
-										</ul>
-									</li>
-									<li><a href="checkout.html">Checkout</a></li>
-									<li><a href="booking-success.html">Booking Success</a></li>
-									<li><a href="favourites.html">Favourites</a></li>
-									<li><a href="chat.html">Chat</a></li>
-									<li><a href="profile-settings.html">Profile Settings</a></li>
-									<li><a href="change-password.html">Change Password</a></li>
+									@endforeach
 								</ul>
 							</li>
 							<li class="has-submenu">
-								<a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+								<a href="{{route('blogs.index')}}">Blog</a>
+							</li>
+							<li class="has-submenu">
+								<a href="javascript:void(0);">Gallery <i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li><a href="blog-list.html">Blog List</a></li>
-									<li><a href="blog-grid.html">Blog Grid</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="{{ route('gallery' )}}">Gallery</a></li>
+									<li><a href="{{ route('video' )}}">Video</a></li>
 								</ul>
 							</li>
 							<li class="has-submenu">

@@ -30,7 +30,8 @@ class BlogResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title'),
-                Textarea::make('short_description'),
+                Textarea::make('short_description')
+                ->maxLength(255),
                 FileUpload::make('image')
                     ->directory('blog')
                     ->disk('public')
@@ -61,7 +62,8 @@ class BlogResource extends Resource
                     ->columnSpan('full'),
                 TextInput::make('slug'),
                 TextInput::make('meta_title'),
-                TextInput::make('meta_desc'),
+                TextInput::make('meta_desc')
+                ->maxLength(255),
                 TagsInput::make('tags')
             ]);
     }
@@ -80,6 +82,7 @@ class BlogResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

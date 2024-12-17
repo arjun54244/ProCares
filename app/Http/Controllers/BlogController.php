@@ -16,10 +16,10 @@ class BlogController extends Controller
 
     public function show(Blog $blog)
     {
-        // Pass the blog post with comments to the view
-        $blog->load('comments');  // Load comments for this blog post
+        $blog->load('comments');
         return view('blog-single', compact('blog'));
     }
+
 
     public function create()
     {

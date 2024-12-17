@@ -33,7 +33,7 @@ class GelleryResource extends Resource
                 ->multiple()
                 ->directory('galleries')
                 ->image()
-                ->storeFileNamesIn('attachments')
+                ->storeFileNamesIn('galleries')
                 ->maxFiles(10)
                 ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/jpg']),
         ]);

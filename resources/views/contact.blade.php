@@ -39,7 +39,7 @@ Contact Us
                         </div>
                         <div class="contact-details">
                             <h4>Address</h4>
-                            <p>8432 Mante Highway, Aminaport, USA</p>
+                            <p>E 66, Main, Press Enclave Marg, near Max Hospital, Saket, South Delhi, Delhi 110017</p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ Contact Us
                         </div>
                         <div class="contact-details">
                             <h4>Phone Number</h4>
-                            <p>+1 315 369 5943</p>
+                            <p>+91 9315845539</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ Contact Us
                         </div>
                         <div class="contact-details">
                             <h4>Email Address</h4>
-                            <p><a href="https://doccure.dreamstechnologies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8eeae1ededfbfcebceebf6efe3fee2eba0ede1e3">[email&#160;protected]</a></p>
+                            <p><a href="mailto:info@procareclinic.com">info@procareclinic.com</a></p>
                         </div>
                     </div>
                 </div>

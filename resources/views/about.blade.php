@@ -33,20 +33,20 @@ About Us
                         <div class="col-md-6">
                             <div class="about-inner-img">
                                 <div class="about-img">
-                                    <img src="assets/img/about-img1.jpg" class="img-fluid" alt="about-image">
+                                    <img src="{{asset('assets/img/new/about1.png')}}" class="img-fluid" alt="Procare Clinic">
                                 </div>
                                 <div class="about-img">
-                                    <img src="assets/img/about-img2.jpg" class="img-fluid" alt="about-image">
+                                    <img src="{{asset('assets/img/new/about3.png')}}" class="img-fluid" alt="Procare Clinic">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="about-inner-img">
                                 <div class="about-box">
-                                    <h4>Over 25+ Years Experience</h4>
+                                    <h4>Trusted Care for Over 15 Years</h4>
                                 </div>
                                 <div class="about-img">
-                                    <img src="assets/img/about-img3.jpg" class="img-fluid" alt="about-image">
+                                    <img src="{{asset('assets/img/new/about2.png')}}" class="img-fluid" alt="Procare Clinic">
                                 </div>
                             </div>
                         </div>
@@ -55,26 +55,21 @@ About Us
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="section-inner-header about-inner-header">
-                    <h6>About Our Company</h6>
-                    <h2>We Are Always Ensure Best Medical Treatment For Your Health</h2>
+                    <h6>About Procare Clinic</h6>
+                    <h2>Committed to Your Health & Well-Being</h2>
                 </div>
                 <div class="about-content">
                     <div class="about-content-details">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque eaque
-                            ipsa quae architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>At Procare Clinic, we provide patient-focused healthcare services that prioritize your well-being. With over 15 years of expertise, our experienced medical professionals are dedicated to delivering comprehensive care tailored to your needs.</p>
+                        <p>Our mission is to create a supportive and caring environment where you can trust us with your health. From advanced diagnostics to personalized treatment plans, we ensure that every patient receives the highest standard of care.</p>
                     </div>
                     <div class="about-contact">
                         <div class="about-contact-icon">
-                            <span><img src="assets/img/icons/phone-icon.svg" alt="phone-image"></span>
+                            <span><img src="assets/img/icons/phone-icon.svg" alt="Contact Procare"></span>
                         </div>
                         <div class="about-contact-text">
-                            <p>Need Emergency?</p>
-                            <h4>+1 315 369 5943</h4>
+                            <p>Need Immediate Assistance?</p>
+                            <h4>+91 9876543210</h4>
                         </div>
                     </div>
                 </div>
@@ -84,13 +79,14 @@ About Us
 </section>
 <!-- /About Us -->
 
+
 <!-- Why Choose Us -->
 <section class="why-choose-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-inner-header text-center">
-                    <h2>Why Choose Us</h2>
+                    <h2>Why Choose Procare Clinic</h2>
                 </div>
             </div>
         </div>
@@ -99,12 +95,11 @@ About Us
                 <div class="card why-choose-card w-100">
                     <div class="card-body">
                         <div class="why-choose-icon">
-                            <span><img src="assets/img/icons/choose-01.svg" alt="choose-image"></span>
+                            <span><img src="assets/img/icons/choose-01.svg" alt="Experienced Doctors"></span>
                         </div>
                         <div class="why-choose-content">
-                            <h4>Qualified Staff of Doctors</h4>
-                            <p>Lorem ipsum sit amet consectetur incididunt ut labore et exercitation ullamco
-                                laboris nisi dolore magna enim veniam aliqua. </p>
+                            <h4>Experienced Specialists</h4>
+                            <p>Our team consists of highly qualified and experienced doctors committed to providing exceptional care for every patient.</p>
                         </div>
                     </div>
                 </div>
@@ -113,12 +108,11 @@ About Us
                 <div class="card why-choose-card w-100">
                     <div class="card-body">
                         <div class="why-choose-icon">
-                            <span><img src="assets/img/icons/choose-02.svg" alt="choose-image"></span>
+                            <span><img src="assets/img/icons/choose-02.svg" alt="Advanced Facilities"></span>
                         </div>
                         <div class="why-choose-content">
-                            <h4>Qualified Staff of Doctors</h4>
-                            <p>Lorem ipsum sit amet consectetur incididunt ut labore et exercitation ullamco
-                                laboris nisi dolore magna enim veniam aliqua. </p>
+                            <h4>Advanced Facilities</h4>
+                            <p>We are equipped with state-of-the-art medical technology to ensure accurate diagnoses and effective treatments.</p>
                         </div>
                     </div>
                 </div>
@@ -127,12 +121,11 @@ About Us
                 <div class="card why-choose-card w-100">
                     <div class="card-body">
                         <div class="why-choose-icon">
-                            <span><img src="assets/img/icons/choose-03.svg" alt="choose-image"></span>
+                            <span><img src="assets/img/icons/choose-03.svg" alt="Patient-Centered Care"></span>
                         </div>
                         <div class="why-choose-content">
-                            <h4>Qualified Staff of Doctors</h4>
-                            <p>Lorem ipsum sit amet consectetur incididunt ut labore et exercitation ullamco
-                                laboris nisi dolore magna enim veniam aliqua. </p>
+                            <h4>Patient-Centered Care</h4>
+                            <p>At Procare Clinic, we prioritize your comfort and well-being, ensuring a personalized healthcare experience.</p>
                         </div>
                     </div>
                 </div>
@@ -141,12 +134,11 @@ About Us
                 <div class="card why-choose-card w-100">
                     <div class="card-body">
                         <div class="why-choose-icon">
-                            <span><img src="assets/img/icons/choose-04.svg" alt="choose-image"></span>
+                            <span><img src="assets/img/icons/choose-04.svg" alt="24/7 Support"></span>
                         </div>
                         <div class="why-choose-content">
-                            <h4>Qualified Staff of Doctors</h4>
-                            <p>Lorem ipsum sit amet consectetur incididunt ut labore et exercitation ullamco
-                                laboris nisi dolore magna enim veniam aliqua. </p>
+                            <h4>24/7 Emergency Support</h4>
+                            <p>We offer round-the-clock support and emergency services to address your healthcare needs promptly.</p>
                         </div>
                     </div>
                 </div>
@@ -155,6 +147,7 @@ About Us
     </div>
 </section>
 <!-- /Why Choose Us -->
+
 
 <!-- Way Section -->
 <section class="way-section">
@@ -189,274 +182,82 @@ About Us
 <!-- /Way Choose Us -->
 
 <!-- Doctors Section -->
-<section class="doctors-section professional-section">
+<section class="doctors-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="section-inner-header text-center">
-                    <h2>Best Doctors</h2>
+            <div class="col-md-12 aos" data-aos="fade-up">
+                <div class="section-header-one section-header-slider text-center">
+                    <h2 class="section-title">Best Doctors</h2>
                 </div>
             </div>
         </div>
+        <div class="owl-carousel doctor-slider-one owl-theme aos" data-aos="fade-up">
 
-        <div class="row">
-
+            @php
+            $doctors = \App\Models\Doctor::all();
+            @endphp
+            @foreach($doctors as $doctor)
             <!-- Doctor Item -->
-            <div class="col-lg-3 col-md-6 d-flex">
-                <div class="doctor-profile-widget w-100">
+            <div class="item">
+                <div class="doctor-profile-widget doc-item">
                     <div class="doc-pro-img">
                         <a href="doctor-profile.html">
                             <div class="doctor-profile-img">
-                                <img src="assets/img/doctors/doctor-03.jpg" class="img-fluid" alt="Ruby Perrin">
+                                <img src="{{asset('storage/'.$doctor->image)}}" class="img-fluid" alt="{{$doctor->name}}">
                             </div>
                         </a>
                         <div class="doctor-amount">
-                            <span>$ 200</span>
+                            <span><i class="fas fa-star"></i> 4.5</span>
                         </div>
                     </div>
                     <div class="doc-content">
                         <div class="doc-pro-info">
                             <div class="doc-pro-name">
-                                <a href="doctor-profile.html">Dr. Ruby Perrin</a>
-                                <p>Cardiology</p>
-                            </div>
-                            <div class="reviews-ratings">
-                                <p>
-                                    <span><i class="fas fa-star"></i> 4.5</span> (35)
-                                </p>
+                                <a href="doctor-profile.html">{{$doctor->name}}</a>
+                                <p>{{ $doctor->position}}</p>
                             </div>
                         </div>
                         <div class="doc-pro-location">
-                            <p><i class="feather-map-pin"></i> Newyork, USA</p>
+                            <p><i class="feather-map-pin"></i> Delhi, India</p>
+                            <span class="badge badge-success doc-badge"><i class="fa-solid fa-circle"></i>Available</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /Doctor Item -->
-
-            <!-- Doctor Item -->
-            <div class="col-lg-3 col-md-6 d-flex">
-                <div class="doctor-profile-widget w-100">
-                    <div class="doc-pro-img">
-                        <a href="doctor-profile.html">
-                            <div class="doctor-profile-img">
-                                <img src="assets/img/doctors/doctor-04.jpg" class="img-fluid" alt="Darren Elder">
-                            </div>
-                        </a>
-                        <div class="doctor-amount">
-                            <span>$ 360</span>
-                        </div>
-                    </div>
-                    <div class="doc-content">
-                        <div class="doc-pro-info">
-                            <div class="doc-pro-name">
-                                <a href="doctor-profile.html">Dr. Darren Elder</a>
-                                <p>Neurology</p>
-                            </div>
-                            <div class="reviews-ratings">
-                                <p>
-                                    <span><i class="fas fa-star"></i> 4.0</span> (20)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="doc-pro-location">
-                            <p><i class="feather-map-pin"></i> Florida, USA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Doctor Item -->
-
-            <!-- Doctor Item -->
-            <div class="col-lg-3 col-md-6 d-flex">
-                <div class="doctor-profile-widget w-100">
-                    <div class="doc-pro-img">
-                        <a href="doctor-profile.html">
-                            <div class="doctor-profile-img">
-                                <img src="assets/img/doctors/doctor-05.jpg" class="img-fluid" alt="Sofia Brient">
-                            </div>
-                        </a>
-                        <div class="doctor-amount">
-                            <span>$ 450</span>
-                        </div>
-                    </div>
-                    <div class="doc-content">
-                        <div class="doc-pro-info">
-                            <div class="doc-pro-name">
-                                <a href="doctor-profile.html">Dr. Sofia Brient</a>
-                                <p>Urology</p>
-                            </div>
-                            <div class="reviews-ratings">
-                                <p>
-                                    <span><i class="fas fa-star"></i> 4.5</span> (30)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="doc-pro-location">
-                            <p><i class="feather-map-pin"></i> Georgia, USA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Doctor Item -->
-
-            <!-- Doctor Item -->
-            <div class="col-lg-3 col-md-6 d-flex">
-                <div class="doctor-profile-widget w-100">
-                    <div class="doc-pro-img">
-                        <a href="doctor-profile.html">
-                            <div class="doctor-profile-img">
-                                <img src="assets/img/doctors/doctor-02.jpg" class="img-fluid" alt="Paul Richard">
-                            </div>
-                        </a>
-                        <div class="doctor-amount">
-                            <span>$ 570</span>
-                        </div>
-                    </div>
-                    <div class="doc-content">
-                        <div class="doc-pro-info">
-                            <div class="doc-pro-name">
-                                <a href="doctor-profile.html">Dr. Paul Richard</a>
-                                <p>Orthopedic</p>
-                            </div>
-                            <div class="reviews-ratings">
-                                <p>
-                                    <span><i class="fas fa-star"></i> 4.3</span> (45)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="doc-pro-location">
-                            <p><i class="feather-map-pin"></i> Michigan, USA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Doctor Item -->
-
+            @endforeach
         </div>
     </div>
 </section>
 <!-- /Doctors Section -->
 
-<!-- Testimonial Section -->
 <section class="testimonial-section">
-    <div class="testimonial-shape-img">
-        <div class="testimonial-shape-left">
-            <img src="assets/img/shape-04.png" alt="shape-image">
-        </div>
-        <div class="testimonial-shape-right">
-            <img src="assets/img/shape-05.png" alt="shape-image">
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="testimonial-slider slick">
+                    @php
+                    $testimonials = App\Models\Testimonial::get();
+                    @endphp
+                    @foreach($testimonials as $testimonial)
                     <div class="testimonial-grid">
                         <div class="testimonial-info">
                             <div class="testimonial-img">
-                                <img src="assets/img/clients/client-01.jpg" class="img-fluid" alt="client-image">
+                                <img src="{{"./storage/$testimonial->image"}}" class="img-fluid" alt="{{ $testimonial->name }}">
                             </div>
                             <div class="testimonial-content">
-                                <div class="section-inner-header testimonial-header">
-                                    <h6>Testimonials</h6>
-                                    <h2>What Our Client Says</h2>
+                                <div class="section-header-one section-header section-inner-header testimonial-header">
+                                    <h5>{{ $testimonial->position }}</h5>
+                                    <h2 class="section-title">⭐⭐⭐⭐</h2>
                                 </div>
                                 <div class="testimonial-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <h6><span>John Doe</span> New York</h6>
+                                    <p>{{ $testimonial->description }}</p>
+                                    <h6><span class="d-block">{{$testimonial->name}}</span></h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-grid">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="assets/img/clients/client-02.jpg" class="img-fluid" alt="client-image">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="section-inner-header testimonial-header">
-                                    <h6>Testimonials</h6>
-                                    <h2>What Our Client Says</h2>
-                                </div>
-                                <div class="testimonial-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <h6><span>Amanda Warren</span> Florida</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-grid">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="assets/img/clients/client-03.jpg" class="img-fluid" alt="client-image">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="section-inner-header testimonial-header">
-                                    <h6>Testimonials</h6>
-                                    <h2>What Our Client Says</h2>
-                                </div>
-                                <div class="testimonial-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <h6><span>Betty Carlson</span> Georgia</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-grid">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="assets/img/clients/client-04.jpg" class="img-fluid" alt="client-image">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="section-inner-header testimonial-header">
-                                    <h6>Testimonials</h6>
-                                    <h2>What Our Client Says</h2>
-                                </div>
-                                <div class="testimonial-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <h6><span>Veronica</span> California</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-grid">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="assets/img/clients/client-05.jpg" class="img-fluid" alt="client-image">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="section-inner-header testimonial-header">
-                                    <h6>Testimonials</h6>
-                                    <h2>What Our Client Says</h2>
-                                </div>
-                                <div class="testimonial-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <h6><span>Richard</span> Michigan</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -492,119 +293,88 @@ About Us
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="faq-info">
+                    <!-- FAQ Section -->
                     <div class="accordion" id="accordionExample">
-
-                        <!-- FAQ Item -->
+                        <!-- FAQ Item 1 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <a href="javascript:void(0)" class="accordion-button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Can i make an Appointment Online with White Plains Hospital Kendi?
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What does a gastroenterologist do?
                                 </a>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                            ad minim veniam, </p>
-                                    </div>
+                                    <p>A gastroenterologist is a medical specialist who diagnoses and treats conditions related to the digestive system, including the esophagus, stomach, intestines, liver, pancreas, and gallbladder.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- /FAQ Item -->
 
-                        <!-- FAQ Item -->
+                        <!-- FAQ Item 2 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Can i make an Appointment Online with White Plains Hospital Kendi?
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    When should I see a gastroenterologist?
                                 </a>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                            ad minim veniam, </p>
-                                    </div>
+                                    <p>You should consider seeing a gastroenterologist if you experience symptoms such as persistent abdominal pain, bloating, heartburn, constipation, diarrhea, rectal bleeding, difficulty swallowing, or unexplained weight loss.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- /FAQ Item -->
 
-                        <!-- FAQ Item -->
+                        <!-- FAQ Item 3 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <a href="javascript:void(0)"
-                                    class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    Can i make an Appointment Online with White Plains Hospital Kendi?
+                                <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I book an appointment?
                                 </a>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                            ad minim veniam, </p>
-                                    </div>
+                                    <p>You can book an appointment by calling our clinic, visiting our website, or using the online appointment booking form.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- /FAQ Item -->
 
-                        <!-- FAQ Item -->
+                        <!-- FAQ Item 4 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
                                 <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    Can i make an Appointment Online with White Plains Hospital Kendi?
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What tests do gastroenterologists perform?
                                 </a>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                            ad minim veniam, </p>
-                                    </div>
+                                    <ul>
+                                        <li>Endoscopy (to examine the upper digestive tract)</li>
+                                        <li>Colonoscopy (to examine the colon)</li>
+                                        <li>Ultrasound or imaging tests for liver and pancreas</li>
+                                        <li>Stool tests</li>
+                                        <li>Breath tests for H. pylori</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- /FAQ Item -->
 
-                        <!-- FAQ Item -->
+                        <!-- FAQ Item 5 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false"
-                                    aria-controls="collapseFive">
-                                    Can i make an Appointment Online with White Plains Hospital Kendi?
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Is a colonoscopy painful?
                                 </a>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                            ad minim veniam, </p>
-                                    </div>
+                                    <p>A colonoscopy is typically not painful. Patients are sedated during the procedure, and most only experience mild discomfort or cramping afterward.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- /FAQ Item -->
-
                     </div>
                 </div>
             </div>
