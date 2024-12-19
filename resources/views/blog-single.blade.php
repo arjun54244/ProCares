@@ -13,7 +13,7 @@ Blog
 				<h2 class="breadcrumb-title">Blog Details</h2>
 				<nav aria-label="breadcrumb" class="page-breadcrumb">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
 						<li class="breadcrumb-item" aria-current="page">Blog Details</li>
 					</ol>
 				</nav>
@@ -40,32 +40,15 @@ Blog
 								<ul>
 									<li>
 										<div class="post-author">
-											<a href="doctor-profile.html"><img src="{{ asset('storage/'.$blog->image) }}" alt="Post Author"> <span>Dr. Darren Elder</span></a>
+											<a href="javascript:void(0);"><img src="{{ asset('storage/'.$blog->image) }}" alt="Post Author"> <span>Dr. Darren Elder</span></a>
 										</div>
 									</li>
 									<li><i class="far fa-calendar"></i>{{ $blog->created_at }}</li>
-									<li><i class="far fa-comments"></i>12 Comments</li>
-									<li><i class="fa fa-tags"></i>Health Tips</li>
 								</ul>
 							</div>
 						</div>
 						<div class="blog-content">
 							{!!$blog->description !!}
-						</div>
-					</div>
-
-					<div class="card blog-share clearfix">
-						<div class="card-header">
-							<h4 class="card-title">Share the post</h4>
-						</div>
-						<div class="card-body">
-							<ul class="social-share">
-								<li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-								<li><a href="#" title="Google Plus"><i class="fab fa-google-plus"></i></a></li>
-								<li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
-							</ul>
 						</div>
 					</div>
 					<div class="card blog-comments clearfix">
@@ -151,7 +134,7 @@ Blog
                             @foreach ($blogs as $blog )
                             <li>
                                 <div class="post-thumb">
-                                    <a href="blog-details.html">
+                                    <a href="{{ route('blogs.show', $blog->slug ) }}">
                                         <img class="img-fluid" src="{{   asset('storage/'.$blog->image) }}" alt="blog-image">
                                     </a>
                                 </div>
@@ -169,7 +152,7 @@ Blog
 				<!-- /Latest Posts -->
 
 				<!-- Tags -->
-				<div class="card tags-widget">
+				<!-- <div class="card tags-widget">
 					<div class="card-header">
 						<h4 class="card-title">Tags</h4>
 					</div>
@@ -197,7 +180,7 @@ Blog
 							<li><a href="#" class="tag">Doccure</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<!-- /Tags -->
 
 			</div>

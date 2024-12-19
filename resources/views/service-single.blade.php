@@ -13,7 +13,7 @@ service
 				<h2 class="breadcrumb-title">{{ $service->title }}</h2>
 				<nav aria-label="breadcrumb" class="page-breadcrumb">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
 						<li class="breadcrumb-item" aria-current="page">Service</li>
 					</ol>
 				</nav>
@@ -80,7 +80,7 @@ service
                             @foreach ($servicess as $service )
                             <li>
                                 <div class="post-thumb">
-                                    <a href="blog-details.html">
+                                    <a href="{{ route('services.show', $service->slug) }}">
                                         <img class="img-fluid" src="{{ asset('storage/'.$service->icon) }}" alt="blog-image">
                                     </a>
                                 </div>

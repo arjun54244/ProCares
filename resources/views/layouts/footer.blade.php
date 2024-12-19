@@ -1,3 +1,50 @@
+<!-- whatsapp -->
+ <style>
+	.sticky-buttons {
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.sticky-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25D366; /* WhatsApp green for WhatsApp button */
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sticky-buttons a.call-btn {
+    background-color: #007BFF; /* Blue color for Call button */
+}
+
+.sticky-buttons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+ </style>
+<div class="sticky-buttons">
+    <a href="https://wa.me/+919315845539" target="_blank" class="whatsapp-btn" title="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919315845539" class="call-btn" title="Call Us">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+
+
 <!-- Footer -->
 <footer class="footer footer-one">
 	<div class="footer-top aos" data-aos="fade-up">
@@ -6,7 +53,7 @@
 				<div class="col-lg-3 col-md-4">
 					<div class="footer-widget footer-about">
 						<div class="footer-logo">
-							<a href="index.html"><img src="{{asset('assets/img/imglogo.png')}}" alt="Procare Clinic Logo"></a>
+							<a href="/"><img src="{{asset('assets/img/imglogo.png')}}" alt="Procare Clinic Logo"></a>
 						</div>
 						<div class="footer-about-content">
 							<p>Procare Clinic is dedicated to providing exceptional healthcare services in a compassionate and patient-centered environment. Your well-being is our top priority.</p>
@@ -19,10 +66,11 @@
 							<div class="footer-widget footer-menu">
 								<h2 class="footer-title">Quick Links</h2>
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="/">Home</a></li>
+									<li><a href="{{route('depatments')}}">Services</a></li>
+									<li><a href="{{route('about')}}">About Us</a></li>
+									<li><a href="{{route('blogs.index')}}">Blogs</a></li>
+									<li><a href="{{route('contact')}}">Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -30,9 +78,8 @@
 							<div class="footer-widget footer-menu">
 								<h2 class="footer-title">Specialties</h2>
 								<ul>
-									<li><a href="gastroenterology.html">Gastroenterology</a></li>
-									<li><a href="hepatology.html">Hepatology</a></li>
-									<li><a href="diagnostics.html">Diagnostics</a></li>
+									<li><a href="depatments/gastroenterology">Gastroenterology</a></li>
+									<li><a href="depatments/endocrinology">Endocrinology</a></li>
 								</ul>
 							</div>
 						</div>
@@ -44,7 +91,10 @@
 										<p><i class="feather-map-pin"></i> E 66, Main, Press Enclave Marg, near Max Hospital, Saket, South Delhi, Delhi 110017</p>
 									</div>
 									<div class="footer-address">
-										<p><i class="feather-phone-call"></i> +91 9315845539</p>
+										<p><i class="feather-phone-call"></i> +91 93158 45539</p>
+									</div>
+									<div class="footer-address">
+										<p><i class="feather-phone-call"></i> +91 99991 80747</p>
 									</div>
 									<div class="footer-address mb-0">
 										<p><i class="feather-mail"></i> <a href="mailto:info@procareclinic.com">info@procareclinic.com</a></p>
@@ -82,17 +132,17 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-6">
 						<div class="copyright-text">
-							<p class="mb-0">Copyright © 2024 Procare Clinic. All Rights Reserved</p>
+							<p class="mb-0">Copyright © 2024 Procare Clinic. Designed & Developed by Digidotes</p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-6">
 						<!-- Copyright Menu -->
-						<div class="copyright-menu">
+						<!-- <div class="copyright-menu">
 							<ul class="policy-menu">
 								<li><a href="privacy-policy.html">Privacy Policy</a></li>
 								<li><a href="terms-condition.html">Terms and Conditions</a></li>
 							</ul>
-						</div>
+						</div> -->
 						<!-- /Copyright Menu -->
 					</div>
 				</div>

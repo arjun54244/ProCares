@@ -127,30 +127,6 @@
 					</a>
 				</div>
 				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
-					<a href="javascript:void(0);" class="serv-wrap green-bg flex-fill">
-						<span>
-							<img src="assets/img/icons/service-02.svg" alt="heart-image">
-						</span>
-						<h4>Lab Testing Services</h4>
-					</a>
-				</div>
-				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
-					<a href="javascript:void(0);" class="serv-wrap info-bg flex-fill">
-						<span>
-							<img src="assets/img/icons/service-03.svg" alt="heart-image">
-						</span>
-						<h4>Medicines & Supplies</h4>
-					</a>
-				</div>
-				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
-					<a href="javascript:void(0);" class="serv-wrap red-bg flex-fill">
-						<span>
-							<img src="assets/img/icons/service-04.svg" alt="heart-image">
-						</span>
-						<h4>Hospitals / Clinics</h4>
-					</a>
-				</div>
-				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
 					<a href="javascript:void(0);" class="serv-wrap success-bg flex-fill">
 						<span>
 							<img src="assets/img/icons/service-05.svg" alt="heart-image">
@@ -167,11 +143,11 @@
 					</a>
 				</div>
 				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
-					<a href="javascript:void(0);" class="serv-wrap danger-bg flex-fill">
+					<a href="javascript:void(0);" class="serv-wrap green-bg flex-fill">
 						<span>
-							<img src="assets/img/icons/service-07.svg" alt="heart-image">
+							<img src="assets/img/icons/service-02.svg" alt="heart-image">
 						</span>
-						<h4>Home Care Services</h4>
+						<h4>Lab Testing Services</h4>
 					</a>
 				</div>
 			</div>
@@ -183,7 +159,10 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-5  aos" data-aos="fade-up">
-				<div class="owl-nav slide-nav-1 text-end nav-control"></div>
+				<div class="owl-nav slide-nav-1 text-end nav-control">
+				<a href="depatments/gastroenterology" class="btn btn-outline-primary">Read More</a>
+				</div>
+				
 			</div>
 		</div>
 		<div class="owl-carousel specialities-slider-one owl-theme aos" data-aos="fade-up">
@@ -223,16 +202,16 @@
 						<span>
 							<img src="{{ asset('storage/'.$service->icon) }}" alt="heart-image">
 						</span>
-						<h4>See All Specialities</h4>
+						<h4>{{$service->title}}</h4>
 					</a>
 				</div>
 				@endforeach
 				<div class="col-12 d-flex col-xxl col-lg-3 col-sm-6">
-					<a href="{{ route('services.index')}}" class="serv-wrap blue-bg flex-fill">
+					<a href="depatments/endocrinology" class="serv-wrap blue-bg flex-fill">
 						<span>
 							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKZGCiKvaZ3VPNh0s1Hz0upcWllWMFHBenw&s" alt="heart-image">
 						</span>
-						<h4>Book Appointment</h4>
+						<h4>Read more</h4>
 					</a>
 				</div>
 			</div>

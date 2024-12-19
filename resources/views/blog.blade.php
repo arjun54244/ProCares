@@ -11,10 +11,10 @@ Blogs
     <div class="container">
         <div class="row align-items-center inner-banner">
             <div class="col-md-12 col-12 text-center">
-                <h2 class="breadcrumb-title">Blog Grid</h2>
+                <h2 class="breadcrumb-title">Blog</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page">Blog</li>
                     </ol>
                 </nav>
@@ -155,7 +155,7 @@ Blogs
                             @foreach ($blogs as $blog )
                             <li>
                                 <div class="post-thumb">
-                                    <a href="blog-details.html">
+                                    <a href="{{ route('blogs.show', $blog->slug ) }}">
                                         <img class="img-fluid" src="{{   asset('storage/'.$blog->image) }}" alt="blog-image">
                                     </a>
                                 </div>

@@ -13,7 +13,7 @@
                 <h2 class="breadcrumb-title">Error 404</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page">Error 404</li>
                     </ol>
                 </nav>
@@ -34,7 +34,7 @@
                         <div class="error-content error-404-content">
                             <h2>Oops! That Page Can’t Be Found.</h2>
                             <p>The page you are looking for was never existed.</p>
-                            <a href="index.html" class="btn btn-primary prime-btn">Back to Home</a>
+                            <a href="/" class="btn btn-primary prime-btn">Back to Home</a>
                         </div>
                     </div>
                 </div>

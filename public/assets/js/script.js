@@ -695,7 +695,7 @@ Version      : 1.3
 
 	if ($('.owl-carousel.doctor-slider-one').length > 0) {
 		$('.owl-carousel.doctor-slider-one').owlCarousel({
-			loop: true,
+			loop: false,
 			margin: 24,
 			dots: false,
 			nav: true,
@@ -713,10 +713,10 @@ Version      : 1.3
 					items: 2
 				},
 				1000: {
-					items: 3
+					items: 2
 				},
 				1300: {
-					items: 4
+					items: 2
 				}
 			}
 		})

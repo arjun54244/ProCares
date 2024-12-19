@@ -13,7 +13,7 @@ Contact Us
                 <h2 class="breadcrumb-title">Contact Us</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page">Contact Us</li>
                     </ol>
                 </nav>

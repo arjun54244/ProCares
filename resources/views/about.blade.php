@@ -13,7 +13,7 @@ About Us
                 <h2 class="breadcrumb-title">About Us</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page">About Us</li>
                     </ol>
                 </nav>
@@ -148,39 +148,6 @@ About Us
 </section>
 <!-- /Why Choose Us -->
 
-
-<!-- Way Section -->
-<section class="way-section">
-    <div class="container">
-        <div class="way-bg">
-            <div class="way-shapes-img">
-                <div class="way-shapes-left">
-                    <img src="assets/img/shape-06.png" alt="shape-image">
-                </div>
-                <div class="way-shapes-right">
-                    <img src="assets/img/shape-07.png" alt="shape-image">
-                </div>
-            </div>
-            <div class="row align-items-end">
-                <div class="col-lg-7 col-md-12">
-                    <div class="section-inner-header way-inner-header mb-0">
-                        <h2>Be on Your Way to Feeling Better with the Doccure</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="contact-us.html" class="btn btn-primary">Contact With Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <div class="way-img">
-                        <img src="assets/img/way-img.png" class="img-fluid" alt="doctor-way-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /Way Choose Us -->
-
 <!-- Doctors Section -->
 <section class="doctors-section">
     <div class="container">
@@ -191,42 +158,42 @@ About Us
                 </div>
             </div>
         </div>
-        <div class="owl-carousel doctor-slider-one owl-theme aos" data-aos="fade-up">
+		<div class="owl-carousel doctor-slider-one owl-theme aos" data-aos="fade-up">
 
-            @php
-            $doctors = \App\Models\Doctor::all();
-            @endphp
-            @foreach($doctors as $doctor)
-            <!-- Doctor Item -->
-            <div class="item">
-                <div class="doctor-profile-widget doc-item">
-                    <div class="doc-pro-img">
-                        <a href="doctor-profile.html">
-                            <div class="doctor-profile-img">
-                                <img src="{{asset('storage/'.$doctor->image)}}" class="img-fluid" alt="{{$doctor->name}}">
-                            </div>
-                        </a>
-                        <div class="doctor-amount">
-                            <span><i class="fas fa-star"></i> 4.5</span>
-                        </div>
-                    </div>
-                    <div class="doc-content">
-                        <div class="doc-pro-info">
-                            <div class="doc-pro-name">
-                                <a href="doctor-profile.html">{{$doctor->name}}</a>
-                                <p>{{ $doctor->position}}</p>
-                            </div>
-                        </div>
-                        <div class="doc-pro-location">
-                            <p><i class="feather-map-pin"></i> Delhi, India</p>
-                            <span class="badge badge-success doc-badge"><i class="fa-solid fa-circle"></i>Available</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Doctor Item -->
-            @endforeach
-        </div>
+			@php
+			$doctors = \App\Models\Doctor::all();
+			@endphp
+			@foreach($doctors as $doctor)
+			<!-- Doctor Item -->
+			<div class="item">
+				<div class="doctor-profile-widget doc-item">
+					<div class="doc-pro-img">
+						<a href="{{ route('doctor.index', $doctor->id)}}">
+							<div class="doctor-profile-img">
+								<img src="{{asset('storage/'.$doctor->image)}}" class="img-fluid" alt="{{$doctor->name}}">
+							</div>
+						</a>
+						<div class="doctor-amount">
+							<span><i class="fas fa-star"></i> 4.5</span>
+						</div>
+					</div>
+					<div class="doc-content">
+						<div class="doc-pro-info">
+							<div class="doc-pro-name">
+								<a href="{{ route('doctor.index', $doctor->id)}}">{{$doctor->name}}</a>
+								<p>{{ $doctor->position}}</p>
+							</div>
+						</div>
+						<div class="doc-pro-location">
+							<p><i class="feather-map-pin"></i> Delhi, India</p>
+							<span class="badge badge-success doc-badge"><i class="fa-solid fa-circle"></i>Available</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Doctor Item -->
+			@endforeach
+		</div>
     </div>
 </section>
 <!-- /Doctors Section -->

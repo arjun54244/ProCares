@@ -14,7 +14,7 @@ Department
                 <h2 class="breadcrumb-title">Department</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page">Department</li>
                     </ol>
                 </nav>
@@ -35,13 +35,15 @@ Department
                         <!-- Blog Post -->
                         <div class="blog grid-blog">
                             <div class="blog-image">
-                                <a href="{{ route('depatment.show', $service->department) }}">
+                                <a href="{{ $show == 0 ? route('services.show', $service->slug) : route('depatment.show', $service->department) }}">
                                     <img class="img-fluid" src="{{ asset('storage/' . $service->image) }}" alt="Post Image">
                                 </a>
                             </div>
                             <div class="blog-content">
                                 <h3 class="blog-title">
-                                    <a href="{{ route('depatment.show', $service->department) }}">{{ ucfirst($service->department) }}</a>
+                                    <a href="{{ $show == 0 ? route('services.show', $service->slug) : route('depatment.show', $service->department) }}">{{ $show == 0 ? $service->title : ucfirst($service->department) }}</a>
+                                    <p class="mb-0">{{ $show == 0 ? $service->short_description : '' }}
+                                    </p>
                                 </h3>
                             </div>
                         </div>
@@ -119,13 +121,13 @@ Department
                             @foreach ($departmants as $service)
                             <li>
                                 <div class="post-thumb">
-                                    <a href="blog-details.html">
+                                    <a href="{{ $show == 0 ? route('services.show', $service->slug) :route('depatment.show', $service->department) }}">
                                         <img class="img-fluid" src="{{   asset('storage/'.$service->icon) }}" alt="blog-image">
                                     </a>
                                 </div>
                                 <div class="post-info">
                                     <h4>
-                                        <a href="{{ route('depatment.show', $service->department) }}">{{ $service->title }}</a>
+                                        <a href="{{ $show == 0 ? route('services.show', $service->slug) :route('depatment.show', $service->department) }}">{{ $service->title }}</a>
                                     </h4>
                                     <p>{{ $service->created_at->format('j M Y') }}</p>
                                 </div>

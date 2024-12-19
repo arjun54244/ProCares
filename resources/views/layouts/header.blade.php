@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from doccure.dreamstechnologies.com/html/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 06:38:56 GMT -->
+<!-- Mirrored from doccure.dreamstechnologies.com/html/template// by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 06:38:56 GMT -->
 
 <head>
 
@@ -709,13 +709,13 @@
 								<span></span>
 							</span>
 						</a>
-						<a href="index.html" class="navbar-brand logo">
+						<a href="/" class="navbar-brand logo">
 							<img src="{{asset('assets/img/imglogo.png')}}" class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
-							<a href="index.html" class="menu-logo">
+							<a href="/" class="menu-logo">
 								<img src="{{asset('assets/img/imglogo.png')}}" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
@@ -723,13 +723,13 @@
 							</a>
 						</div>
 						<ul class="main-nav">
-							<li class="has-submenu megamenu active">
+							<li class="has-submenu megamenu {{Route::current()->getName() === 'home' ? 'active' :''}}">
 								<a href="{{route('home')}}">Home</a>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu {{Route::current()->getName() === 'about' ? 'active' :''}}">
 								<a href="{{route('about')}}">About Us</a>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu {{ Route::current()->getName() === 'depatments' || Route::current()->getName() === 'services.index' ? 'active' : ''}}">
 								<a href="{{route('depatments')}}">Services<i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
 									@foreach($services = \App\Models\Service::all()->where('status', 1)->unique('department') as $service)
@@ -744,17 +744,17 @@
 									@endforeach
 								</ul>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu {{Route::current()->getName() === 'blogs.index' ? 'active' :''}}">
 								<a href="{{route('blogs.index')}}">Blog</a>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu {{ Route::current()->getName() === 'gallery' || Route::current()->getName() === 'video' ? 'active' : '' }}">
 								<a href="javascript:void(0);">Gallery <i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li><a href="{{ route('gallery' )}}">Gallery</a></li>
-									<li><a href="{{ route('video' )}}">Video</a></li>
+									<li><a href="{{ route('gallery') }}">Gallery</a></li>
+									<li><a href="{{ route('video') }}">Video</a></li>
 								</ul>
 							</li>
-							<li class="has-submenu">
+							<li class="has-submenu {{Route::current()->getName() === 'contact' ? 'active' :''}}">
 								<a href="{{route('contact')}}">Contact Us</a>
 							</li>
 							<!-- <li class="searchbar">
@@ -768,7 +768,7 @@
 									</form>
 								</div>
 							</li> -->
-							<li class="login-link"><a href="login.html">Login / Signup</a></li>
+							<li class="login-link"><a href="{{route('contact')}}">Login / Signup</a></li>
 						</ul>
 					</div>
 					<ul class="nav header-navbar-rht">
