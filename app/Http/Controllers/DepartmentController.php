@@ -14,7 +14,8 @@ class DepartmentController extends Controller
 
     public function department(string $department){
         $show = 0 ;
+        $department;
         $departmants = \App\Models\Service::all()->where('status', 1)->where('department', $department);
-        return view('department', compact('departmants', 'show'));
+        return view('department', compact('departmants', 'show','department'));
     }
 }
