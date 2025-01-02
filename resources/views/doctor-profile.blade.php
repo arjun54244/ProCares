@@ -121,10 +121,12 @@ Doctors
                     <p>“{!! $doctor->description !!}”
                     </p>
                 </div>
+                @if (isset($doctor->location))
                 <div class="doc-information-details" id="clinic">
                     <div class="detail-title">
                         <h4>Clinics & Locations</h4>
                     </div>
+                    
                     @foreach ($doctor->location as $location)
                     @php
                         $times = $location['times'];
@@ -132,6 +134,7 @@ Doctors
                     <x-profile-map name="{{ $location['name'] }}" address=" {{ $location['address'] }}" map="{{ $location['map'] }}" mapimg="{{$location['mapimg']}}"  :times="$times" />
                     @endforeach
                 </div>
+                @endif
             </div>
         </div>
 
