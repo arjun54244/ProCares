@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="d-flex align-items-center avail-time-slot">
-                
+                @if (isset($times))
                 @foreach ($times as $time)
                 <div class="availability-date">
                     <div class="book-date">
@@ -19,6 +19,7 @@
                     </div>
                 </div>
                 @endforeach
+                @endif
             </div>
         </div>
         <div class="col-lg-5">
