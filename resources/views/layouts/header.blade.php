@@ -745,7 +745,7 @@
 								</ul>
 							</li>
 							<li class="has-submenu {{Route::current()->getName() === 'blogs.index' ? 'active' :''}}">
-								<a href="{{route('blogs.index')}}">Blog</a>
+								<a href="{{route('blogs.index')}}">Blogs</a>
 							</li>
 							<li class="has-submenu {{ Route::current()->getName() === 'gallery' || Route::current()->getName() === 'video' ? 'active' : '' }}">
 								<a href="javascript:void(0);">Gallery <i class="fas fa-chevron-down"></i></a>

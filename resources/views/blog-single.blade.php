@@ -38,12 +38,8 @@ Blog
 						<div class="blog-info clearfix">
 							<div class="post-left">
 								<ul>
-									<li>
-										<div class="post-author">
-											<a href="javascript:void(0);"><img src="{{ asset('storage/'.$blog->image) }}" alt="Post Author"> <span>Dr. Darren Elder</span></a>
-										</div>
-									</li>
-									<li><i class="far fa-calendar"></i>{{ $blog->created_at }}</li>
+									
+									<!-- <li><i class="far fa-calendar"></i>$blog->created_at </li> -->
 								</ul>
 							</div>
 						</div>

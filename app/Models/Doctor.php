@@ -10,12 +10,16 @@ class Doctor extends Model
         'name',
         'email',
         'phone',
+        'experience',
         'image',
         'position',
         'specialization',
         'description',
+        'location',
+        'status',
     ];
+
     protected $casts = [
-        'experience' => 'json'
+        'location' => 'array', 
     ];
 }

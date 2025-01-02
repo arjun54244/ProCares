@@ -97,6 +97,16 @@ Contact Us
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
+                                        <label class="mb-2">Select Doctor</label>
+                                        <select class="form-control">
+                                            <option value="" disabled selected>Select Doctor</option>
+                                            <option value="peeyush-kumar">Dr. Peeyush Kumar</option>
+                                            <option value="bhawana-attri">Dr. Bhawana Attri</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
                                         <label class="mb-2">Message</label>
                                         <textarea class="form-control" placeholder="Enter your comments"></textarea>
                                     </div>
@@ -118,7 +128,7 @@ Contact Us
 
 <!-- Contact Map -->
 <div class="contact-map d-flex">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.7301009561315!2d-76.13077892422932!3d36.82498697224007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89bae976cfe9f8af%3A0xa61eac05156fbdb9!2sBeachStreet%20USA!5e0!3m2!1sen!2sin!4v1669777904208!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224345.30926531804!2d77.207756!3d28.527831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce10c6e4c5df5%3A0x2a5e7f6f96377aed!2sDr.%20Peeyush%20Kumar%20-%20Best%20Gastroenterologist%20in%20South%20Delhi%20%7C%20Best%20Liver%20Doctor%20in%20South%20Delhi%20%7C%20Best%20Gastro%20Doctor%20in%20Saket!5e0!3m2!1sen!2sin!4v1734689104760!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <!-- /Contact Map -->
 

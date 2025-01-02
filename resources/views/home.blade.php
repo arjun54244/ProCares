@@ -74,7 +74,7 @@
 						<div class="col-md-6">
 							<div class="about-inner-img">
 								<div class="about-box">
-									<h4>Trusted Care for Over 15 Years</h4>
+									<h4>Trusted Care for Over 15 Years +</h4>
 								</div>
 								<div class="about-img">
 									<img src="{{asset('assets/img/new/about2.png')}}" class="img-fluid" alt="Procare Clinic">
@@ -188,9 +188,6 @@
 						<h2 class="section-title">Endocrinologist</h2>
 					</div>
 				</div>
-				<div class="col-md-6 col-5  aos" data-aos="fade-up">
-					<div class="owl-nav slide-nav-1 text-end nav-control"></div>
-				</div>
 			</div>
 			<div class="row row-cols-7 row-cols-xxl-7 row-cols-xl-4 row-cols-lg-4 rows-cols-md-6 justify-content-center">
 				@php
@@ -226,53 +223,7 @@
 
 
 <!-- Doctors Section -->
-<section class="doctors-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 aos" data-aos="fade-up">
-				<div class="section-header-one section-header-slider text-center">
-					<h2 class="section-title">Best Doctors</h2>
-				</div>
-			</div>
-		</div>
-		<div class="owl-carousel doctor-slider-one owl-theme aos" data-aos="fade-up">
-
-			@php
-			$doctors = \App\Models\Doctor::all();
-			@endphp
-			@foreach($doctors as $doctor)
-			<!-- Doctor Item -->
-			<div class="item">
-				<div class="doctor-profile-widget doc-item">
-					<div class="doc-pro-img">
-						<a href="{{ route('doctor.index', $doctor->id)}}">
-							<div class="doctor-profile-img">
-								<img src="{{asset('storage/'.$doctor->image)}}" class="img-fluid" alt="{{$doctor->name}}">
-							</div>
-						</a>
-						<div class="doctor-amount">
-							<span><i class="fas fa-star"></i> 4.5</span>
-						</div>
-					</div>
-					<div class="doc-content">
-						<div class="doc-pro-info">
-							<div class="doc-pro-name">
-								<a href="{{ route('doctor.index', $doctor->id)}}">{{$doctor->name}}</a>
-								<p>{{ $doctor->position}}</p>
-							</div>
-						</div>
-						<div class="doc-pro-location">
-							<p><i class="feather-map-pin"></i> Delhi, India</p>
-							<span class="badge badge-success doc-badge"><i class="fa-solid fa-circle"></i>Available</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /Doctor Item -->
-			@endforeach
-		</div>
-	</div>
-</section>
+		<x-doctor/>
 <!-- /Doctors Section -->
 
 <!-- Work Section -->
@@ -503,7 +454,7 @@
 		<div class="row">
 			<div class="col-md-12 aos" data-aos="fade-up">
 				<div class="section-header-one text-center">
-					<h2 class="section-title">Latest Articles</h2>
+					<h2 class="section-title">Latest Blogs</h2>
 				</div>
 			</div>
 		</div>
@@ -524,14 +475,14 @@
 						</div>
 						<div class="articles-right">
 							<div class="articles-content">
-								<ul class="articles-list nav">
+								<!-- <ul class="articles-list nav">
 									<li>
 										<i class="feather-user"></i> John Doe
 									</li>
 									<li>
 										<i class="feather-calendar"></i> 13 Aug, 2023
 									</li>
-								</ul>
+								</ul> -->
 								<h4>
 									<a href="{{ route('blogs.show', $blog->slug)}}">{{ $blog->title }}</a>
 								</h4>

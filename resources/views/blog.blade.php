@@ -11,11 +11,11 @@ Blogs
     <div class="container">
         <div class="row align-items-center inner-banner">
             <div class="col-md-12 col-12 text-center">
-                <h2 class="breadcrumb-title">Blog</h2>
+                <h2 class="breadcrumb-title">Blogs</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Blog</li>
+                        <li class="breadcrumb-item" aria-current="page">Blogs</li>
                     </ol>
                 </nav>
             </div>
@@ -148,7 +148,7 @@ Blogs
                 <!-- Latest Posts -->
                 <div class="card post-widget">
                     <div class="card-header">
-                        <h4 class="card-title">Latest Posts</h4>
+                        <h4 class="card-title">Latest Blogs</h4>
                     </div>
                     <div class="card-body">
                         <ul class="latest-posts">

@@ -11,11 +11,11 @@ youtube
     <div class="container">
         <div class="row align-items-center inner-banner">
             <div class="col-md-12 col-12 text-center">
-                <h2 class="breadcrumb-title">Services</h2>
+                <h2 class="breadcrumb-title">Gallery</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Services</li>
+                        <li class="breadcrumb-item" aria-current="page">Gallery</li>
                     </ol>
                 </nav>
             </div>
