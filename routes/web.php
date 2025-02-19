@@ -31,6 +31,44 @@ Route::get('/depatmentstest', function () {
 })->name('depatmentstest');
 
 
+Route::get('/fix', function () {
+    $sourcePath = storage_path('app/public/');
+    $destinationPath = public_path('storage'); 
+
+    // Ensure the destination directory exists
+    if (!File::exists($destinationPath)) {
+        File::makeDirectory($destinationPath, 0755, true);
+    }
+    
+    // Clean the destination directory before copying
+    if (File::exists($destinationPath)) {
+        File::deleteDirectory($destinationPath);
+        File::makeDirectory($destinationPath, 0755, true);
+    }
+    
+    // Get all files recursively in the source directory
+    $files = File::allFiles($sourcePath);
+    
+    foreach ($files as $file) {
+        // Log the file path
+        Log::info('File found: ' . $file->getPathname());
+    
+        // Define the target path for the file
+        $targetPath = $destinationPath . '/' . $file->getRelativePathname();
+    
+        // Ensure subdirectories exist in the target
+        $targetDir = dirname($targetPath);
+        if (!File::exists($targetDir)) {
+            File::makeDirectory($targetDir, 0755, true);
+        }
+    
+        // Copy the file to the destination
+        File::copy($file->getPathname(), $targetPath);
+        
+    }
+return redirect()->route('home');
+});
+
 Route::fallback(function () {
     return view('404');
 });
